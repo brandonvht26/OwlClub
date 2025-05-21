@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galería con Flechas</title>
+  <link rel="stylesheet" href="src/css/styles.css">
+</head>
+<body>
+
+  <h1>Galería Desplazable</h1>
+
+  <div class="galeria-contenedor">
+    <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
+
+    <div class="galeria" id="galeria">
+        <img src="src/images/borrar.jpg" alt="Imagen 1">
+        <img src="src/images/image2.png" alt="Imagen 2">
+        <img src="src/images/image3.png" alt="Imagen 3">
+        <img src="src/images/image4.png" alt="Imagen 4">
+        <img src="src/images/image5.png" alt="Imagen 5">
+    </div>
+
+    <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
+  </div>
+
+  <script src="src/js/script.js"></script>
+</body>
+</html>
