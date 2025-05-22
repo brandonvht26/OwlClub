@@ -1,7 +1,3 @@
-
-/* style.css */
-
-/* Variables de color y fuentes */
 :root {
     --colorUno: #FFFFFF;
     --colorDos: #D9D9D9;
@@ -20,9 +16,6 @@ html {
 body{
     font-family: var(--fuentePrincipal);
 }
-
-/* NAVBAR */
-
 
 /* Reset básico y estilos generales */
 * {
@@ -241,7 +234,7 @@ ul {
 
 body {
   font-family: Arial, sans-serif;
-  background: #f4f4f4;
+  background: var(--colorUno);
   margin: 0;
   padding: 20px;
 }
