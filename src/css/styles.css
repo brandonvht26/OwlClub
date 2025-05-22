@@ -307,3 +307,43 @@ h1 {
 .flecha:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
+/* ===== Download Section ===== */
+.download-section {
+    background-color: var(--colorTres); /* Amarillo */
+    color: var(--colorCuatro); /* Morado */
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin: 50px auto;
+    max-width: 900px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.download-section h2 {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.download-section p {
+    font-family: var(--fuentePrincipal);
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.store-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.store-button img {
+    height: 60px;
+    transition: transform 0.3s ease;
+}
+
+.store-button img:hover {
+    transform: scale(1.05);
+}
