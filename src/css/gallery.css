@@ -1,87 +1,52 @@
-:root {
-    --colorUno: #FFFFFF;
-    --colorDos: #D9D9D9;
-    --colorTres: #FFC70F;
-    --colorCuatro: #9C5297;
-    --colorCinco: #000000;
-    --fuentePrincipal: "Comic Neue", sans-serif;
-    --fuenteSecundaria: "Coiny", sans-serif;
-    --border-color: #D3D3D3; /* Gris claro para los bordes */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Comic Neue", sans-serif;
 }
 
-html {
-    background-color: var(--colorUno);
+h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+    text-transform: uppercase;
 }
 
-body{
-    font-family: var(--fuentePrincipal);
+.container {
+    width: 100%;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 8%;
+    background: linear-gradient(135deg, var(--colorTres) 0%, var(--colorCuatro) 100%);
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
 }
 
-body {
-  font-family: Arial, sans-serif;
-  background: var(--colorUno);
-  margin: 0;
-  padding: 20px;
-}
-
-h1 {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.galeria-contenedor {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-width: 100%;
-  overflow: hidden;
-}
-
-.galeria {
-  display: flex;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  gap: 10px;
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    max-width: 1200px; 
+    width: 100%; 
 }
 
 
-.galeria img {
-  flex-shrink: 0;
-  width: 300px;
-  height: 500px;
-  border-radius: 10px;
-  object-fit: cover;
-  transition: transform 0.3s;
+.gallery img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    height: 200px; 
+
+    /* La transición para el efecto de "mini salto" */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición también para la sombra */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; 
 }
 
-.galeria img:hover {
-  transform: scale(1.05);
-}
-
-.flecha {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.5);
-  color: white;
-  border: none;
-  font-size: 2rem;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 1;
-  border-radius: 50%;
-  user-select: none;
-}
-
-.flecha.izquierda {
-  left: 10px;
-}
-
-.flecha.derecha {
-  right: 10px;
-}
-
-.flecha:hover {
-  background-color: rgba(0,0,0,0.8);
+/* Pseudo-clase :hover para el efecto al pasar el cursor */
+.gallery img:hover {
+    transform: translateY(-5px); /* Mueve la imagen 5 píxeles hacia arriba */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Sombra más pronunciada al pasar el cursor */
 }
