@@ -431,3 +431,30 @@ h1 {
         margin: 0;
     }
 }
+
+/* Footer */
+.footer {
+  background-color: var(--colorCuatro);    
+  color: #FFFFFF;              
+  text-align: center;        
+  padding: 20px 10px;            
+  margin-top: 40px;              
+  font-family: Arial, sans-serif;
+}
+
+.footer-links {
+  margin-top: 10px;
+}
+
+.footer-links a {
+  color: var(--colorUno);
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: var(--colorTres);                
+  text-decoration: underline;
+}
