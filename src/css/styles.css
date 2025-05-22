@@ -1,0 +1,234 @@
+/* style.css */
+
+/* Variables de color y fuentes */
+:root {
+    --colorUno: #FFFFFF;
+    --colorDos: #D9D9D9;
+    --colorTres: #FFC70F;
+    --colorCuatro: #9C5297;
+    --colorCinco: #000000;
+    --fuentePrincipal: "Comic Neue", sans-serif;
+    --fuenteSecundaria: "Coiny", sans-serif;
+    --border-color: #D3D3D3; /* Gris claro para los bordes */
+}
+
+html {
+    background-color: var(--colorUno);
+}
+
+body{
+    font-family: var(--fuentePrincipal);
+}
+
+/* Reset básico y estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit; /* Hereda el color del padre */
+}
+
+ul {
+    list-style: none;
+}
+
+/* ========================================= */
+/* NAVBAR - MOBILE FIRST */
+/* ========================================= */
+
+.navbar {
+    background-color: var(--colorTres); /* colorTres (#FFC70F) */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: relative;
+    height: 70px;
+    overflow: hidden;
+}
+
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-family: var(--fuenteSecundaria); /* fuenteSecundaria ("Coiny") */
+    font-size: 2.2em;
+    color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-right: auto;
+}
+
+.navbar-brand img {
+    height: 50px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.navbar-toggler {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+    padding: 0;
+    z-index: 100;
+}
+
+.toggler-icon {
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+.navbar-toggler.active .toggler-icon:nth-child(1) {
+    transform: translateY(11px) rotate(45deg);
+}
+
+.navbar-toggler.active .toggler-icon:nth-child(2) {
+    opacity: 0;
+}
+
+.navbar-toggler.active .toggler-icon:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+.navbar-nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 250px;
+    background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+    box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
+    display: flex;
+    flex-direction: column;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 90;
+}
+
+.navbar-nav.active {
+    transform: translateX(0);
+}
+
+.navbar-nav li {
+    padding: 0;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.navbar-nav li:last-child {
+    border-bottom: none;
+}
+
+.navbar-nav li a {
+    display: block;
+    padding: 15px 20px;
+    color: var(--colorUno); /* colorUno (#FFFFFF) */
+    font-size: 1.1em;
+    font-family: var(--fuentePrincipal); /* fuentePrincipal ("Comic Neue") */
+    transition: background-color 0.2s ease;
+}
+
+.navbar-nav li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.navbar-nav .btn-login {
+    background-color: var(--colorTres); /* colorTres (#FFC70F) */
+    color: var(--colorUno); /* colorUno (#FFFFFF) */
+    text-align: center;
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin: 15px 20px;
+    font-weight: bold;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.navbar-nav .btn-login:hover {
+    background-color: #CC8400; /* Ejemplo de color oscuro */
+}
+
+/* ========================================= */
+/* Media Query para Desktop (MacBook Air) */
+/* ========================================= */
+
+@media (min-width: 1024px) {
+    .navbar {
+        justify-content: flex-start;
+        padding: 15px 40px;
+        overflow: visible;
+    }
+
+    .navbar-brand {
+        margin-right: 50px;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+
+    .navbar-nav {
+        position: static;
+        flex-direction: row;
+        background-color: transparent;
+        box-shadow: none;
+        transform: translateX(0);
+        width: auto;
+        margin-left: auto;
+    }
+
+    .navbar-nav li {
+        border-bottom: none;
+        margin-left: 30px;
+    }
+
+    .navbar-nav li a {
+        padding: 0;
+        color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+        font-size: 1.1em;
+        position: relative;
+        transition: color 0.3s ease;
+    }
+
+    .navbar-nav li a:hover {
+        background-color: transparent;
+    }
+
+    .navbar-nav li a::after {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -5px;
+        left: 0;
+        background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+        transition: width 0.3s ease-out;
+    }
+
+    .navbar-nav li a:hover::after {
+        width: 100%;
+    }
+
+    .navbar-nav .btn-login {
+        background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+        color: var(--colorUno); /* colorUno (#FFFFFF) */
+        padding: 10px 25px;
+        border-radius: 50px;
+        margin-left: 40px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+        transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    .navbar-nav .btn-login:hover {
+        background-color: #6A0DAD; /* Ejemplo de color oscuro */
+        transform: translateY(-2px);
+    }
+}
