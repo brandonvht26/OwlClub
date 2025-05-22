@@ -1,4 +1,4 @@
-/*<<<<<<< HEAD*/
+
 /* style.css */
 
 /* Variables de color y fuentes */
@@ -239,10 +239,6 @@ ul {
 
 /* END NAVBAR */
 
-/*
-Inicio Galeria
-*/
-
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -312,42 +308,133 @@ h1 {
   background-color: rgba(0,0,0,0.8);
 }
 
-/* ===== Download Section ===== */
+/* ========================================= */
+/* DOWNLOAD SECTION */
+/* ========================================= */
+
 .download-section {
-    background-color: var(--colorTres); /* Amarillo */
-    color: var(--colorCuatro); /* Morado */
-    text-align: center;
-    padding: 50px 20px;
-    border-radius: 10px;
+    background: linear-gradient(135deg, var(--colorTres) 0%, var(--colorCuatro) 100%);
+    padding: 80px 20px;
+    border-radius: 15px;
     margin: 50px auto;
-    max-width: 900px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    color: var(--colorUno);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    position: relative;
 }
 
-.download-section h2 {
-    font-family: var(--fuenteSecundaria);
-    font-size: 2.5em;
-    margin-bottom: 10px;
+.download-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    z-index: 2;
+    width: 100%;
 }
 
-.download-section p {
-    font-family: var(--fuentePrincipal);
-    font-size: 1.2em;
+.download-text {
+    max-width: 600px;
     margin-bottom: 30px;
 }
 
-.store-buttons {
+.download-text h2 {
+    font-family: var(--fuenteSecundaria);
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: var(--colorUno);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.download-text p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.download-buttons {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.store-button {
+    transition: transform 0.3s ease;
+}
+
+.store-button:hover {
+    transform: translateY(-5px);
 }
 
 .store-button img {
     height: 60px;
-    transition: transform 0.3s ease;
+    width: auto;
+    border-radius: 8px;
 }
 
-.store-button img:hover {
-    transform: scale(1.05);
+.download-image {
+    width: 80%;
+    max-width: 300px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.download-image img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.2));
+}
+
+/* Media queries para dispositivos móviles y tablets */
+@media (max-width: 768px) {
+    .download-section {
+        padding: 50px 15px;
+        margin: 30px auto;
+    }
+
+    .download-text h2 {
+        font-size: 2rem;
+    }
+
+    .download-text p {
+        font-size: 1rem;
+    }
+
+    .store-button img {
+        height: 50px;
+    }
+}
+
+/* Media queries para desktop */
+@media (min-width: 1024px) {
+    .download-section {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 60px 50px;
+    }
+
+    .download-content {
+        flex: 1;
+        align-items: flex-start;
+        text-align: left;
+        padding-right: 50px;
+    }
+
+    .download-buttons {
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .download-image {
+        flex: 1;
+        max-width: 400px;
+        margin: 0;
+    }
 }
