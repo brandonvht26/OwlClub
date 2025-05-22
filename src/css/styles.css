@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+/*<<<<<<< HEAD*/
 /* style.css */
 
 /* Variables de color y fuentes */
@@ -239,6 +239,10 @@ ul {
 
 /* END NAVBAR */
 
+/*
+Inicio Galeria
+*/
+
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -307,3 +311,7 @@ h1 {
 .flecha:hover {
   background-color: rgba(0,0,0,0.8);
 }
+
+/*
+Fin galeria
+*/
