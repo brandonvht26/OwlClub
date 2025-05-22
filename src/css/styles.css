@@ -1,14 +1,3 @@
-:root {
-    --colorUno: #FFFFFF;
-    --colorDos: #D9D9D9;
-    --colorTres: #FFC70F;
-    --colorCuatro: #9C5297;
-    --colorCinco: #000000;
-    --fuentePrincipal: "Comic Neue", sans-serif;
-    --fuenteSecundaria: "Coiny", sans-serif;
-    --border-color: #D3D3D3; /* Gris claro para los bordes */
-}
-
 body {
   font-family: Arial, sans-serif;
   background: #f4f4f4;
@@ -77,28 +66,3 @@ h1 {
 .flecha:hover {
   background-color: rgba(0,0,0,0.8);
 }
-
-.footer {
-  background-color: var(--colorCuatro);     
-  color:var(--colorUno);                
-  text-align: center;            
-  padding: 20px 10px;            
-  margin-top: 40px;              
-  font-family: var(--fuentePrincipal);
-}
-
-.footer-links {
-  margin-top: 10px;
-}
-
-.footer-links a {
-  color: var(--colorUno);
-  margin: 0 15px;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-}
-
-.footer-links a:hover {
-  color: var(--colorTres);
-}                

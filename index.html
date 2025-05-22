@@ -11,31 +11,32 @@
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="shortcut icon" href="src/images/buho.png" type="image/x-icon">
-
-
-
 </head>
 
 <body>
 
-  <h1>Galería Owl Club</h1>
-
-  <div class="galeria-contenedor">
-    <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
-
-    <div class="galeria" id="galeria">
-        <img src="src/images/buho_biblioteca.png" alt="Imagen 1">
-        <img src="src/images/buho_fondo_blanco.jpeg" alt="Imagen 2">
-        <img src="src/images/buho_lector.png" alt="Imagen 3">
-        <img src="src/images/buho_soleado.png" alt="Imagen 4">
-        <img src="src/images/buho.png" alt="Imagen 5">
-    </div>
-
-    <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
-  </div>
-
-  <script src="src/js/script.js"></script>
+  
     <!-- Start - Section Header -->
+    <header class="container">
+        <nav class="navbar">
+            <div class="navbar-brand">
+                <img src="src/images/buho.png" alt="Logo OWL-CLUB">
+                <span class="brand-text">OWL-CLUB</span>
+            </div>
+            <button class="navbar-toggler" aria-label="Toggle navigation">
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+                <span class="toggler-icon"></span>
+            </button>
+            <ul class="navbar-nav">
+                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Foro</a></li>
+                <li><a href="#">Descargas</a></li>
+                <li><a href="#" class="btn-login">Log In</a></li>
+            </ul>
+        </nav>       
+    </header>
+
     <!-- End - Section Header -->
 
 
@@ -58,6 +59,23 @@
 
 
     <!-- Start - Section Gallery -->
+     <h1>Galería Owl Club</h1>
+
+  <div class="galeria-contenedor">
+    <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
+
+    <div class="galeria" id="galeria">
+        <img src="src/images/buho_biblioteca.png" alt="Imagen 1">
+        <img src="src/images/buho_fondo_blanco.jpeg" alt="Imagen 2">
+        <img src="src/images/buho_lector.png" alt="Imagen 3">
+        <img src="src/images/buho_soleado.png" alt="Imagen 4">
+        <img src="src/images/buho.png" alt="Imagen 5">
+    </div>
+
+    <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
+  </div>
+
+  <script src="src/js/script.js"></script>
     <!-- End - Section Gallery -->
 
 
@@ -78,4 +96,3 @@
 
 </body>
 </html>
->>>>>>> eb2e64060f4275859ee3353c468d9ac03a6a8261
