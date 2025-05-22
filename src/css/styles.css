@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* style.css */
 
 /* Variables de color y fuentes */
@@ -19,6 +20,9 @@ html {
 body{
     font-family: var(--fuentePrincipal);
 }
+
+/* NAVBAR */
+
 
 /* Reset básico y estilos generales */
 * {
@@ -231,4 +235,75 @@ ul {
         background-color: #6A0DAD; /* Ejemplo de color oscuro */
         transform: translateY(-2px);
     }
+}
+
+/* END NAVBAR */
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.galeria-contenedor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.galeria {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 10px;
+}
+
+
+.galeria img {
+  flex-shrink: 0;
+  width: 300px;
+  height: 500px;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.flecha {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 1;
+  border-radius: 50%;
+  user-select: none;
+}
+
+.flecha.izquierda {
+  left: 10px;
+}
+
+.flecha.derecha {
+  right: 10px;
+}
+
+.flecha:hover {
+  background-color: rgba(0,0,0,0.8);
 }

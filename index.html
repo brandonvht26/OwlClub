@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,6 +12,7 @@
     <link rel="stylesheet" href="./src/css/styles.css">
     <link rel="shortcut icon" href="src/images/buho.png" type="image/x-icon">
 </head>
+
 <body>
 
     <!-- Start - Section Header -->
@@ -31,7 +33,9 @@
                 <li><a href="#">Descargas</a></li>
                 <li><a href="#" class="btn-login">Log In</a></li>
             </ul>
-        </nav>                   
+        </nav>       
+    </header>
+
     <!-- End - Section Header -->
 
 
@@ -54,6 +58,28 @@
 
 
     <!-- Start - Section Gallery -->
+
+    <gallery>
+        <h1>Galería Owl Club</h1>
+
+        <div class="galeria-contenedor">
+            <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
+
+            <div class="galeria" id="galeria">
+                <img src="src/images/buho_biblioteca.png" alt="Imagen 1">
+                <img src="src/images/buho_fondo_blanco.jpeg" alt="Imagen 2">
+                <img src="src/images/buho_lector.png" alt="Imagen 3">
+                <img src="src/images/buho_soleado.png" alt="Imagen 4">
+                <img src="src/images/buho.png" alt="Imagen 5">
+            </div>
+
+            <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
+        </div>
+
+        <script src="src/js/script.js"></script>
+    >>>>>>> c040ace46d74e1b6c38f31c8acde4653063cf9fc
+    </gallery>
+
     <!-- End - Section Gallery -->
 
 
