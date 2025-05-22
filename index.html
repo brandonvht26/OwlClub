@@ -15,6 +15,7 @@
 
 <body>
 
+  
     <!-- Start - Section Header -->
     <header class="container">
         <nav class="navbar">
@@ -58,28 +59,23 @@
 
 
     <!-- Start - Section Gallery -->
+     <h1>Galería Owl Club</h1>
 
-    <gallery>
-        <h1>Galería Owl Club</h1>
+  <div class="galeria-contenedor">
+    <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
 
-        <div class="galeria-contenedor">
-            <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
+    <div class="galeria" id="galeria">
+        <img src="src/images/buho_biblioteca.png" alt="Imagen 1">
+        <img src="src/images/buho_fondo_blanco.jpeg" alt="Imagen 2">
+        <img src="src/images/buho_lector.png" alt="Imagen 3">
+        <img src="src/images/buho_soleado.png" alt="Imagen 4">
+        <img src="src/images/buho.png" alt="Imagen 5">
+    </div>
 
-            <div class="galeria" id="galeria">
-                <img src="src/images/buho_biblioteca.png" alt="Imagen 1">
-                <img src="src/images/buho_fondo_blanco.jpeg" alt="Imagen 2">
-                <img src="src/images/buho_lector.png" alt="Imagen 3">
-                <img src="src/images/buho_soleado.png" alt="Imagen 4">
-                <img src="src/images/buho.png" alt="Imagen 5">
-            </div>
+    <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
+  </div>
 
-            <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
-        </div>
-
-        <script src="src/js/script.js"></script>
-    >>>>>>> c040ace46d74e1b6c38f31c8acde4653063cf9fc
-    </gallery>
-
+  <script src="src/js/script.js"></script>
     <!-- End - Section Gallery -->
 
 
@@ -88,8 +84,15 @@
     <!-- End - Section Contact -->
 
 
-    <!-- Start - Section Footer -->
-    <!-- End - Section Footer -->
+    <footer class="footer">
+    <P>2025 Owl Club</P>
+        <div class="footer-links">
+            <a href="#">Inicio</a>
+            <a href="#">Galería</a>
+            <a href="#">Contactos</a>
+            <a href="#">Derechos</a>
+        </div>
+    </footer>
 
 </body>
 </html>
