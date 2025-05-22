@@ -21,19 +21,18 @@
 <body>
 
     <!-- Start - Section Header -->
-
-    <header class="container">
+    <header>
         <nav class="navbar">
             <div class="navbar-brand">
                 <img src="src/images/buho.png" alt="Logo OWL-CLUB">
                 <span class="brand-text">OWL CLUB</span>
             </div>
-            <button class="navbar-toggler" aria-label="Toggle navigation">
+            <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
                 <span class="toggler-icon"></span>
             </button>
-            <ul class="navbar-nav">
+            <ul class="navbar-nav" id="navbarNav">
                 <li><a href="#">Galeria</a></li>
                 <li><a href="#">Foro</a></li>
                 <li><a href="#">Descargas</a></li>
@@ -41,7 +40,6 @@
             </ul>
         </nav>       
     </header>
-
     <!-- End - Section Header -->
 
 
@@ -58,32 +56,32 @@
 
 
     <!-- Start - Section App -->
-     
-      <section class="download-section container">
-          <div class="download-content">
-              <div class="download-text">
-                  <h2>Descarga Owl Club</h2>
-                  <p>Accede a toda la información y ayuda que necesitas en tus estudios desde tu dispositivo móvil. Descarga nuestra aplicación y lleva el conocimiento universitario a todas partes.</p>
-              </div>
-              <div class="download-buttons">
-                  <a href="#" class="store-button">
-                      <img src="src/images/google-play-badge.svg" alt="Descargar en Google Play">
-                  </a>
-                  <a href="#" class="store-button">
-                      <img src="src/images/app-store-badge.svg" alt="Descargar en App Store">
-                  </a>
-              </div>
-          </div>
-          <div class="download-image">
-              <img src="src/images/logo1.png" alt="Owl Club App">
-          </div>
-      </section>
+    
+    <section class="download-section container">
+        <div class="download-content">
+            <div class="download-text">
+                <h2>Descarga Owl Club</h2>
+                <p>Accede a toda la información y ayuda que necesitas en tus estudios desde tu dispositivo móvil. Descarga nuestra aplicación y lleva el conocimiento universitario a todas partes.</p>
+            </div>
+            <div class="download-buttons">
+                <a href="#" class="store-button">
+                    <img src="src/images/google-play-badge.svg" alt="Descargar en Google Play">
+                </a>
+                <a href="#" class="store-button">
+                    <img src="src/images/app-store-badge.svg" alt="Descargar en App Store">
+                </a>
+            </div>
+        </div>
+        <div class="download-image">
+            <img src="src/images/logo1.png" alt="Owl Club App">
+        </div>
+    </section>
     <!-- End - Section App -->
 
     <!-- Start - Section Gallery -->
     <h1>Galería Owl Club</h1>
 
-  <div class="galeria-contenedor">
+    <div class="galeria-contenedor">
     <button class="flecha izquierda" onclick="scrollGaleria(-1)">&#10094;</button>
 
     <div class="galeria" id="galeria">
@@ -95,7 +93,7 @@
     </div>
 
     <button class="flecha derecha" onclick="scrollGaleria(1)">&#10095;</button>
-  </div>
+    </div>
 
     <!-- End - Section Gallery -->
 

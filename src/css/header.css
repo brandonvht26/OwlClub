@@ -64,6 +64,11 @@ ul {
     vertical-align: middle;
 }
 
+.brand-text {
+    display: inline-block;
+    vertical-align: middle;
+}
+
 .navbar-toggler {
     background: none;
     border: none;
@@ -126,12 +131,15 @@ ul {
 }
 
 .navbar-nav li a {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 15px 20px;
     color: var(--colorUno); /* colorUno (#FFFFFF) */
     font-size: 1.1em;
     font-family: var(--fuentePrincipal); /* fuentePrincipal ("Comic Neue") */
     transition: background-color 0.2s ease;
+    height: 100%;
 }
 
 .navbar-nav li a:hover {
@@ -140,7 +148,7 @@ ul {
 
 .navbar-nav .btn-login {
     background-color: var(--colorTres); /* colorTres (#FFC70F) */
-    color: var(--colorUno); /* colorUno (#FFFFFF) */
+    color: var(--colorCuatro); /* Cambiado a morado para mejor contraste */
     text-align: center;
     padding: 15px 20px;
     border-radius: 5px;
@@ -150,7 +158,8 @@ ul {
 }
 
 .navbar-nav .btn-login:hover {
-    background-color: #CC8400; /* Ejemplo de color oscuro */
+    background-color: #E6B400; /* Un tono más oscuro del amarillo */
+    transform: translateY(-2px);
 }
 
 /* ========================================= */
@@ -158,14 +167,24 @@ ul {
 /* ========================================= */
 
 @media (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+    
     .navbar {
         justify-content: flex-start;
-        padding: 15px 40px;
+        padding: 0 40px;
         overflow: visible;
+        height: 80px; /* Altura consistente */
     }
 
     .navbar-brand {
         margin-right: 50px;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .navbar-toggler {
@@ -180,11 +199,16 @@ ul {
         transform: translateX(0);
         width: auto;
         margin-left: auto;
+        height: 100%;
+        align-items: center;
     }
 
     .navbar-nav li {
         border-bottom: none;
         margin-left: 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
     }
 
     .navbar-nav li a {
@@ -193,6 +217,9 @@ ul {
         font-size: 1.1em;
         position: relative;
         transition: color 0.3s ease;
+        background: transparent;
+        height: auto;
+        display: inline-block;
     }
 
     .navbar-nav li a:hover {
@@ -222,10 +249,11 @@ ul {
         margin-left: 40px;
         box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
         transition: background-color 0.3s ease, transform 0.2s ease;
+        display: inline-block;
     }
 
     .navbar-nav .btn-login:hover {
-        background-color: #6A0DAD; /* Ejemplo de color oscuro */
+        background-color: #8A4185; /* Un tono más oscuro del morado */
         transform: translateY(-2px);
     }
 }
