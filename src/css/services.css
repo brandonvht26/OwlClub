@@ -1,1 +1,231 @@
+:root {
+    --colorUno: #FFFFFF;
+    --colorDos: #D9D9D9;
+    --colorTres: #FFC70F;
+    --colorCuatro: #9C5297;
+    --colorCinco: #000000;
+    --colorSeis:rgb(214, 196, 214);
+    --colorSiete:#80407b;
+    --fuentePrincipal: "Comic Neue", sans-serif;
+    --fuenteSecundaria: "Coiny", sans-serif;
+    --fuenteForo: "Delicious Handrawn", sans-serif;
+    --border-color: #D3D3D3; 
+}
 
+body{
+    margin: 0;
+}
+
+.services{
+    padding: 1.5rem;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    background-color: var(--colorDos);
+}
+
+.questions{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    padding: 0 1.5rem;
+}
+
+.title{
+    font-size: clamp(1.8rem, 5vw, 2.5rem);
+    font-family: var(--fuenteForo);
+    color: var(--colorCinco);
+    letter-spacing: 1px;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.search{
+    display: flex;
+    margin-top: auto;
+    margin: 0;
+    width: 100%;
+}
+
+.search_box {
+    margin-top: -1rem;
+    margin-bottom: 2rem;
+    flex-direction: row;
+    width: 100%;
+    max-width: 500px;
+    padding: clamp(0.75rem, 3vw, 1rem) clamp(1rem, 4vw, 1.5rem);
+    text-transform: none;
+    border: 1px solid var(--colorTres);
+    border-radius: 25px;
+    background-color: var(--colorSeis);
+    font-family: var(--fuenteForo);
+    font-size:  clamp(0.9rem, 3vw, 1rem);
+    color: var(--colorCinco);
+    display: flex;
+    margin-left: auto;
+    letter-spacing: 1px;
+    align-items: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+}
+
+.search_box i{
+    color: var(--colorCinco);
+    font-size: 1.5em;
+    margin-right: 10px;
+}
+
+.topics_container{
+    margin: 0;
+    padding: 0 1.5rem;
+}
+
+.container_title{
+    margin-bottom: 3rem;
+    position: relative;
+    font-family: var(--fuenteForo);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.header{
+    font-family: var(--fuentePrincipal);
+    margin-top: 0;
+    color: var(--colorCinco);
+}
+
+.title_box{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.title_box i.fas.fa-circle{
+    font-size: 2.5em;
+    margin-top: 5px;
+    margin-right: 8px;
+    color: var(--colorCuatro);
+    flex-shrink: 0;
+}
+
+.header_text{
+    display: flex;
+    flex-direction: column;
+    margin-top: 8px;
+}
+
+.header_title{
+    line-height: 1.2;
+}
+
+.header_subtitle{
+    margin-top: 4px;
+}
+
+.box_label .icon-hand{
+    font-size: 0.9em;
+    margin-right: 6px;
+    color: var(--colorUno);
+    vertical-align: middle;
+}
+
+.topic_content{
+    margin-top: -10px;
+    font-family: var(--fuentePrincipal);
+    font-size: 1.2rem;
+}
+
+.topics_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px, 100%), 1fr));
+    margin:0;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.topic_item {
+    min-width: 0;
+}
+
+.topic_box {
+    height: auto;
+    padding: 1.5rem;
+    margin: 0;
+    background-color: var(--colorUno);
+    border-bottom: 3px solid var(--colorCinco);
+    border-radius: 25px;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.content_box {
+    width: 100%;
+    padding: 1.5rem;
+    border-radius: 25px;
+    background-color: var(--colorUno);
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+}
+
+.box_label {
+    width: fit-content;
+    margin: -1.5rem 1rem 0 auto;
+    padding: 0.5rem 1rem;
+    background-color: var(--colorSiete);
+    border-radius: 25px;
+}
+
+.topic_item:hover{
+    opacity: 1;
+    filter: brightness(1.5);
+}
+
+.topic_box, .content_box{
+    padding: 20px;
+    width: 100% !important;
+    margin: 0 !important;
+    box-sizing: border-box;
+}
+
+@media (min-width: 900px) {
+    .services {
+        padding: 2rem;
+    }
+    
+    .search_box {
+        max-width: 500px;
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .questions {
+        padding: 0 2rem;
+    }
+    
+    .topics_container {
+        padding: 0 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .questions {
+        flex-direction: row;  
+        justify-content: space-between; 
+        align-items: center;
+    }
+
+    .search {
+        width: auto;
+    }
+
+    .search_box {
+        margin-top: -6rem;
+        margin-bottom: 3rem;
+        max-width: 400px;
+        padding: 0.8rem 1.5rem;
+    }
+}
