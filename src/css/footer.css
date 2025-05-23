@@ -43,3 +43,38 @@ body{
   color: var(--colorTres);                
   text-decoration: underline;
 }
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left img.footer-logo {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+}
+
+.footer-center, .footer-right {
+  max-width: 300px;
+}
+
+.footer-center h3, .footer-right p {
+  margin: 10px 0;
+  font-family: var(--fuentePrincipal);
+}
+
+.footer-center a {
+  color: var(--colorUno);
+  text-decoration: none;
+}
+
+.footer-center a:hover {
+  color: var(--colorTres);
+  text-decoration: underline;
+}
+
