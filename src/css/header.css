@@ -17,7 +17,6 @@ body{
     font-family: var(--fuentePrincipal);
 }
 
-/* Reset básico y estilos generales */
 * {
     margin: 0;
     padding: 0;
@@ -26,7 +25,7 @@ body{
 
 a {
     text-decoration: none;
-    color: inherit; /* Hereda el color del padre */
+    color: inherit;
 }
 
 ul {
@@ -38,7 +37,7 @@ ul {
 /* ========================================= */
 
 .navbar {
-    background-color: var(--colorTres); /* colorTres (#FFC70F) */
+    background-color: var(--colorTres); 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,22 +50,24 @@ ul {
 .navbar-brand {
     display: flex;
     align-items: center;
-    font-family: var(--fuenteSecundaria); /* fuenteSecundaria ("Coiny") */
+    font-family: var(--fuenteSecundaria);
     font-size: 2.2em;
-    color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+    color: var(--colorCuatro); 
     text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
     margin-right: auto;
 }
 
 .navbar-brand img {
-    height: 50px;
-    margin-right: 10px;
+    margin-top: 40px;
+    height: 110px;
+    margin-right: 20px;
     vertical-align: middle;
 }
 
 .brand-text {
     display: inline-block;
     vertical-align: middle;
+    font-family: var(--fuenteSecundaria);
 }
 
 .navbar-toggler {
@@ -86,7 +87,7 @@ ul {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+    background-color: var(--colorCuatro); 
     border-radius: 5px;
     transition: all 0.3s ease;
 }
@@ -108,7 +109,7 @@ ul {
     top: 70px;
     right: 0;
     width: 250px;
-    background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+    background-color: var(--colorCuatro); 
     box-shadow: -5px 5px 15px rgba(0,0,0,0.3);
     display: flex;
     flex-direction: column;
@@ -135,9 +136,9 @@ ul {
     align-items: center;
     justify-content: center;
     padding: 15px 20px;
-    color: var(--colorUno); /* colorUno (#FFFFFF) */
+    color: var(--colorUno); 
     font-size: 1.1em;
-    font-family: var(--fuentePrincipal); /* fuentePrincipal ("Comic Neue") */
+    font-family: var(--fuentePrincipal); 
     transition: background-color 0.2s ease;
     height: 100%;
 }
@@ -147,8 +148,8 @@ ul {
 }
 
 .navbar-nav .btn-login {
-    background-color: var(--colorTres); /* colorTres (#FFC70F) */
-    color: var(--colorCuatro); /* Cambiado a morado para mejor contraste */
+    background-color: var(--colorTres); 
+    color: var(--colorCuatro); 
     text-align: center;
     padding: 15px 20px;
     border-radius: 5px;
@@ -158,7 +159,7 @@ ul {
 }
 
 .navbar-nav .btn-login:hover {
-    background-color: #E6B400; /* Un tono más oscuro del amarillo */
+    background-color: #E6B400; 
     transform: translateY(-2px);
 }
 
@@ -177,7 +178,7 @@ ul {
         justify-content: flex-start;
         padding: 0 40px;
         overflow: visible;
-        height: 80px; /* Altura consistente */
+        height: 80px; 
     }
 
     .navbar-brand {
@@ -213,7 +214,7 @@ ul {
 
     .navbar-nav li a {
         padding: 0;
-        color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+        color: var(--colorCuatro); 
         font-size: 1.1em;
         position: relative;
         transition: color 0.3s ease;
@@ -233,7 +234,7 @@ ul {
         height: 2px;
         bottom: -5px;
         left: 0;
-        background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
+        background-color: var(--colorCuatro);
         transition: width 0.3s ease-out;
     }
 
@@ -242,8 +243,8 @@ ul {
     }
 
     .navbar-nav .btn-login {
-        background-color: var(--colorCuatro); /* colorCuatro (#9C5297) */
-        color: var(--colorUno); /* colorUno (#FFFFFF) */
+        background-color: var(--colorCuatro); 
+        color: var(--colorUno); 
         padding: 10px 25px;
         border-radius: 50px;
         margin-left: 40px;
@@ -253,9 +254,7 @@ ul {
     }
 
     .navbar-nav .btn-login:hover {
-        background-color: #8A4185; /* Un tono más oscuro del morado */
+        background-color: #8A4185; 
         transform: translateY(-2px);
     }
 }
-
-/* END NAVBAR */
