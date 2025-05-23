@@ -13,6 +13,143 @@ html {
     background-color: var(--colorUno);
 }
 
-body{
-    font-family: var(--fuentePrincipal);
+body {
+    font-family: var(--fuenteSecundaria);
+    margin: 0;
+    padding: 0;
+}
+
+/* --------------------- */
+/*  MOBILE FIRST        */
+/* --------------------- */
+.hero {
+    padding: 2rem 1rem;
+    background-color: var(--colorUno);
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.hero-image {
+    flex: 0 0 auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.hero-logo {
+    width: 180px;
+    max-width: 100%;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.hero-text {
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+}
+.hero-text2 {
+    font-family: var(--fuenteSecundaria);
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.4;
+    margin: 0;
+}
+
+.yellow {
+    color: var(--colorTres);
+    font-family: var(--fuenteSecundaria);
+    font-weight: bold;
+}
+
+.purple {
+    color: var(--colorCuatro);
+    font-family: var(--fuenteSecundaria);
+    font-weight: bold;
+}
+
+/* --------------------- */
+/*  iPad (vertical) (>=768px)     */
+/* --------------------- */
+@media (min-width: 768px) {
+    .hero-container {
+        display: flex;
+        flex-direction: row;       /* Horizontal */
+        align-items: left;
+        justify-content: space-between;
+        padding: 3rem;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .hero-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .hero-logo {
+        width: 300px;
+        max-width: 100%;
+    }
+
+    .hero-content {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        gap: 1rem;
+    }
+
+    .hero-text,
+    .hero-text2 {
+        font-size: 3rem;
+        text-align: left;
+        line-height: 1.2;
+    }
+}
+
+/* --------------------- */
+/*  DESKTOP (>=900px)  MacBook Pro */
+/* --------------------- */
+@media (min-width: 900px) {
+    .hero-container {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 5rem;
+        text-align: left;
+    }
+
+    .hero-logo {
+        width: 500px;
+    }
+
+    .hero-content {
+        max-width: 60%;
+    }
+
+    .hero-text {
+        font-size: 4rem;
+        text-align: left;
+    }
+    .hero-text2 {
+        font-size: 3.8rem;
+        text-align: left;
+    }
 }
