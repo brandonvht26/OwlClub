@@ -45,7 +45,6 @@ body{
 
 .search{
     display: flex;
-    margin-top: auto;
     margin: 0;
     width: 100%;
 }
@@ -92,6 +91,9 @@ body{
 }
 
 .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     font-family: var(--fuentePrincipal);
     margin-top: 0;
     color: var(--colorCinco);
@@ -124,6 +126,20 @@ body{
 
 .header_subtitle{
     margin-top: 4px;
+}
+
+.label_menu_box{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.options_icon{
+    color: var(--colorCinco);
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: auto;
 }
 
 .box_label .icon-hand{
@@ -185,7 +201,6 @@ body{
 }
 
 .topic_box, .content_box{
-    padding: 20px;
     width: 100% !important;
     margin: 0 !important;
     box-sizing: border-box;
