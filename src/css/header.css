@@ -58,6 +58,7 @@ ul {
 }
 
 .navbar-brand img {
+    position: absolute;
     margin-top: 40px;
     height: 110px;
     margin-right: 20px;
