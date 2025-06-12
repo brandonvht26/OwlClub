@@ -1,3 +1,4 @@
+/* Cosas generales */
 :root {
     --colorUno: #FFFFFF;
     --colorDos: #D9D9D9;
@@ -118,5 +119,45 @@ body {
 .footer-right .copyright-row img {
     position: relative;
     top: 1px;
+}
+
+
+/* Ajuste a otros dispositivos*/
+@media (max-width : 767px) {
+    .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    /*padding: 0 10px;
+    gap: 10px;*/
+  }
+
+  .footer-left,
+  .footer-center,
+  .footer-right {
+    width: 100%;
+    padding: 0;
+  }
+
+  .footer-left {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-center h3,
+  .footer-right h3,
+  .footer-center p,
+  .footer-right p,
+  .footer-center a {
+    text-align: center;
+  }
+
+  .footer-right .copyright-row {
+    justify-content: center;
+  }
+
+  .footer {
+    font-size: 1.1rem; 
+  }
 }
 
