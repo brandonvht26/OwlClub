@@ -1,0 +1,122 @@
+/* Cosas generales */
+:root {
+  --colorUno: #FFFFFF;
+  --colorDos: #D9D9D9;
+  --colorTres: #FFC70F;
+  --colorCuatro: #9C5297;
+  --colorCinco: #000000;
+  --fuentePrincipal: "Comic Neue", sans-serif;
+  --fuenteSecundaria: "Coiny", sans-serif;
+  --border-color: #D3D3D3; 
+}
+
+/* Contact */
+.contact-section {
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--colorDos), var(--colorTres), var(--colorCuatro));
+  background-size: 200% 200%;
+  animation: fondoMovil 10s ease infinite;
+  font-family: var(--fuentePrincipal);
+  color: var(--colorCinco);
+}
+
+@keyframes fondoMovil {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+  background-color: var(--colorUno);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* formulario de contact part */
+.contact-form {
+  flex: 1;
+  min-width: 300px;
+  max-width: 600px;
+}
+
+.contact-form h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-family: var(--fuenteSecundaria);
+  color: var(--colorCuatro);
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-form label {
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: var(--colorCinco);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: var(--fuentePrincipal);
+  background-color: var(--colorUno);
+  color: var(--colorCinco);
+  box-sizing: border-box;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #777;
+}
+
+.contact-form button {
+  margin-top: 15px;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  background-color: var(--colorCuatro);
+  color: var(--colorUno);
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--fuenteSecundaria);
+  transition: background-color 0.3s;
+}
+
+.contact-form button:hover {
+  background-color: #7a3d77;
+}
+
+/* MAPA */
+.contact-map {
+  flex: 1;
+  min-width: 300px;
+  height: 450px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste a otros dispositivos*/
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+  }
+
+  .contact-map {
+    height: 300px;
+  }
+}
