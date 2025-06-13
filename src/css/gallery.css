@@ -1,3 +1,10 @@
+.titulo__gallery{
+    display: flex;
+    justify-content: center;
+    padding: 20px 20px 0px 20px;
+    font-size: 40px;
+}
+
 /* Contenedor de la galería */
 .gallery__container {
     display: flex;
@@ -5,7 +12,7 @@
     padding: 20px;
 }
 
-/* Galería en sí */
+/* Galería */
 .gallery {
     justify-content: center;
     display:grid;
@@ -32,9 +39,10 @@
 }
 
 /* En pantallas grandes, alinear al centro cuando no hay muchas imágenes */
-@media (min-width>= 992px) {
+@media (width>= 992px) {
     .gallery {
         justify-content: center;
         grid-template-columns: repeat(auto-fit, 200px);
+        padding: 20px;
     }
 }
