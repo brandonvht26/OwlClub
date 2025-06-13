@@ -20,7 +20,9 @@ body {
 
 /* Footer */
 .footer {
-    background: linear-gradient(135deg, #6b2e8c, #9c5297); /* degradado púrpura */
+    background: linear-gradient(135deg,var(--colorTres), var(--colorCuatro), #6b2e8c); 
+    background-size: 200% 200%;
+    animation: fondoMovil 10s ease infinite;
     color: #FFFFFF;
     text-align: center;
     padding: 20px 10px;
