@@ -22,9 +22,11 @@ body{
 /* ========================================= */
 
 .download-section {
-    background: linear-gradient(135deg, var(--colorTres) 0%, var(--colorCuatro) 100%);
+    background: linear-gradient(45deg,var(--colorTres), var(--colorCuatro), #6b2e8c);
+    background-size: 200% 200%;
+    animation: fondoMovil 10s ease infinite;
     padding: 80px 20px;
-    border-radius: 15px;
+    /* border-radius: 15px; */
     margin: 50px auto;
     display: flex;
     flex-direction: column;

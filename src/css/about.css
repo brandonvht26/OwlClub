@@ -25,7 +25,9 @@ body {
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    background-color: var(--colorCuatro);
+    background: linear-gradient(135deg,var(--colorTres), var(--colorCuatro), #6b2e8c); /* degradado púrpura */
+    background-size: 200% 200%;
+    animation: fondoMovil 10s ease infinite;
 }
 
 .about {

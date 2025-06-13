@@ -13,13 +13,14 @@
 /* Contact */
 .contact-section {
   padding: 40px 20px;
-  background: linear-gradient(135deg, var(--colorDos), var(--colorTres), var(--colorCuatro));
+  background: linear-gradient(315deg, #6b2e8c, var(--colorCuatro),var(--colorTres));
   background-size: 200% 200%;
   animation: fondoMovil 10s ease infinite;
   font-family: var(--fuentePrincipal);
   color: var(--colorCinco);
 }
 
+/* Para el toque animado */
 @keyframes fondoMovil {
   0% { background-position: 0% 50%; }
   50% { background-position: 100% 50%; }
