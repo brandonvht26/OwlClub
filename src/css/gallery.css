@@ -4,6 +4,7 @@
     font-size: 1.8rem;
     font-weight: bold;
     color: var(--colorUno);
+    margin-bottom: 1rem;
     text-align: center;
 }
 
@@ -20,7 +21,7 @@
 /* Galería */
 .gallery {
     justify-content: center;
-    display:flex;
+    display:grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     width: 100%;
