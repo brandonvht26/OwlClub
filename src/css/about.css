@@ -1,0 +1,20 @@
+:root {
+    --colorUno: #FFFFFF;
+    --colorDos: #D9D9D9;
+    --colorTres: #FFC70F;
+    --colorCuatro: #9C5297;
+    --colorCinco: #000000;
+    --fuentePrincipal: "Comic Neue", sans-serif;
+    --fuenteSecundaria: "Coiny", sans-serif;
+    --border-color: #D3D3D3; 
+}
+
+html {
+    background-color: var(--colorUno);
+}
+
+body {
+    font-family: var(--fuenteSecundaria);
+    margin: 0;
+    padding: 0;
+}
