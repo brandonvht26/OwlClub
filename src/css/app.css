@@ -149,3 +149,10 @@ body{
         margin: 0;
     }
 }
+
+.separator-block {
+      height: 20px; /* Define la altura del bloque. Ajústala a tu gusto. */
+      background-color: #FFFFFF; /* Color de fondo blanco */
+      max-width: 1200px; /* Ancho máximo para que coincida con tus otras secciones */
+      margin: 60px auto; /* Crea espacio arriba y abajo y lo centra horizontalmente */
+    }
