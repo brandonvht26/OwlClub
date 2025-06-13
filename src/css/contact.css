@@ -112,7 +112,7 @@
 }
 
 /* Ajuste a otros dispositivos*/
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .contact-container {
     flex-direction: column;
   }
