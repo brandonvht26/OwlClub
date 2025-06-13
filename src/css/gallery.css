@@ -1,13 +1,15 @@
 .titulo__gallery{
-    display: flex;
-    justify-content: center;
-    padding: 0px 20px 0px 20px;
-    font-size: 40px;
+    border-bottom: 4px solid var(--colorTres);
+    max-width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--colorUno);
+    text-align: center;
 }
 
 /* Contenedor de la galería */
 .gallery__container {
-    display: flex;
+    display: flexbox;
     justify-content: center;
     padding: 20px;
     background: linear-gradient(315deg, #6b2e8c, var(--colorCuatro),var(--colorTres));
@@ -18,7 +20,7 @@
 /* Galería */
 .gallery {
     justify-content: center;
-    display:grid;
+    display:flex;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 15px;
     width: 100%;
