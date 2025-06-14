@@ -3,14 +3,18 @@
 <html lang="en">
 
 <head>
+    <!-- Metadatos básicos -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Owl Club</title>
+    <link rel="shortcut icon" href="src/images/buho.png" type="image/x-icon">
+
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Coiny&family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+    <!-- Estilos base y componentes -->
     <link rel="stylesheet" href="./src/css/normalize.css">
     <link rel="stylesheet" href="./src/css/header.css">
     <link rel="stylesheet" href="./src/css/hero.css">
@@ -20,10 +24,12 @@
     <link rel="stylesheet" href="./src/css/services.css">
     <link rel="stylesheet" href="./src/css/lightbox.css">
     <link rel="stylesheet" href="./src/css/contact.css">
-    <link rel="stylesheet" href="./src/css/about.css">
-    <link rel="shortcut icon" href="src/images/buho.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/about.css"> 
+
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Delicious+Handrawn&display=swap" rel="stylesheet">
+
+    <!-- Recursos precargados -->
     <link rel="preload"
         href="data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='50' height='50' viewBox='0 0 50 50'%3E%3Ccircle cx='25' cy='25' r='24' fill='currentColor'/%3E%3Ctext x='25' y='33' font-family='Arial' font-size='24' font-weight='bold' text-anchor='middle' fill='%23000'%3EA%3C/text%3E%3C/svg%3E"
         as="image">
@@ -31,12 +37,12 @@
 
 <body>
 
-    <!-- Start - Section Header -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion Header * * * * * * * * * * * * * * * * * * * * * * * -->
     <header>
         <nav class="navbar">
             <div class="navbar-brand">
                 <img src="src/images/buho.png" alt="Logo OWL-CLUB">
-                <span class="brand-text">OWL CLUB</span>
+                <span class="brand-text">Owl Club</span>
             </div>
             <button class="navbar-toggler" id="navbarToggler" aria-label="Toggle navigation">
                 <span class="toggler-icon"></span>
@@ -44,17 +50,17 @@
                 <span class="toggler-icon"></span>
             </button>
             <ul class="navbar-nav" id="navbarNav">
-                <li><a href="#">Galeria</a></li>
+                <li><a href="#">Galería</a></li>
                 <li><a href="#">Foro</a></li>
                 <li><a href="#">Descargas</a></li>
-                <li><a href="#" class="btn-login">Log In</a></li>
+                <li><a href="#" class="btn-login">Inicio de sesión</a></li>
             </ul>
         </nav>
     </header>
-    <!-- End - Section Header -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del Header * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-    <!-- Start - Section Main -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion Main * * * * * * * * * * * * * * * * * * * * * * * -->
     <section class="hero">
         <div class="hero-container">
             <div class="hero-image">
@@ -72,10 +78,10 @@
             </div>
         </div>
     </section>
-    <!-- End - Section Main -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del Main * * * * * * * * * * * * * * * * * * * * * * * -->
 
 
-    <!-- Start - Section About -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion About * * * * * * * * * * * * * * * * * * * * * * * -->
 
     <header class="container">
         <section class="about">
@@ -96,20 +102,25 @@
         </section>
     </header>
 
-    <!-- End - Section About -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del About * * * * * * * * * * * * * * * * * * * * * * * -->
 
-    <!-- Start - Section Services -->
+    <!-- Este es un bloque separador, no contiene nada pero igual no lo borres! -->
+    <div class="separator-block" id="contacto"></div>
+    
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion Services * * * * * * * * * * * * * * * * * * * * * * * -->
     <section class="services">
         <div class="questions">
             <h1 class="title">¿Tienes una duda?</h1>
         </div>
-        <div class="search">
-            <h2 class="search_box">
-                <i class="fas fa-search"></i> Escribe tu pregunta aquí...
-            </h2>
-        </div>
-        <div class="topics_container">
-            <h3 class="container_title">Temas recientes</h3>
+        <div class="superior_fila">
+            <div class="topics_container">
+                <h3 class="container_title">Temas recientes</h3>
+            </div>
+            <div class="search">
+                <h2 class="search_box">
+                    <i class="fas fa-search"></i> Escribe tu pregunta aquí...
+                </h2>
+            </div>
         </div>
         <div class="topics_grid">
             <div class="topic_item">
@@ -132,7 +143,7 @@
                 </div>
                 <div class="content_box">
                     <div class="topic_content">
-                        <h5 class="content_title">TEMA</h5>
+                        <h5 class="content_title">Tema</h5>
                         <h6 class="content_subtitle">Subtema</h6>
                         <p class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -160,7 +171,7 @@
                 </div>
                 <div class="content_box">
                     <div class="topic_content">
-                        <h5 class="content_title">TEMA</h5>
+                        <h5 class="content_title">Tema</h5>
                         <h6 class="content_subtitle">Subtema</h6>
                         <p class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -188,7 +199,7 @@
                 </div>
                 <div class="content_box">
                     <div class="topic_content">
-                        <h5 class="content_title">TEMA</h5>
+                        <h5 class="content_title">Tema</h5>
                         <h6 class="content_subtitle">Subtema</h6>
                         <p class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -216,7 +227,7 @@
                 </div>
                 <div class="content_box">
                     <div class="topic_content">
-                        <h5 class="content_title">TEMA</h5>
+                        <h5 class="content_title">Tema</h5>
                         <h6 class="content_subtitle">Subtema</h6>
                         <p class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -244,7 +255,7 @@
                 </div>
                 <div class="content_box">
                     <div class="topic_content">
-                        <h5 class="content_title">TEMA</h5>
+                        <h5 class="content_title">Tema</h5>
                         <h6 class="content_subtitle">Subtema</h6>
                         <p class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -272,7 +283,7 @@
                 </div>
                 <div class="content_box">
                     <div class="topic_content">
-                        <h5 class="content_title">TEMA</h5>
+                        <h5 class="content_title">Tema</h5>
                         <h6 class="content_subtitle">Subtema</h6>
                         <p class="content">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
@@ -283,10 +294,12 @@
         </div>
     </section>
 
-    <!-- End - Section Services -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del Services * * * * * * * * * * * * * * * * * * * * * * * -->
 
+    <!-- Este es un bloque separador, no contiene nada pero igual no lo borres! -->
+    <div class="separator-block" id="contacto"></div>
 
-    <!-- Start - Section App -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion App * * * * * * * * * * * * * * * * * * * * * * * -->
 
     <section class="download-section container">
         <div class="download-content">
@@ -308,13 +321,16 @@
             <img src="src/images/logo1.png" alt="Owl Club App">
         </div>
     </section>
-    <!-- End - Section App -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del App * * * * * * * * * * * * * * * * * * * * * * * -->
+
+    <!-- Este es un bloque separador, no contiene nada pero igual no lo borres! -->
     <div class="separator-block" id="contacto"></div>
-    <!-- Start - Section Contact -->
+
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion Contact * * * * * * * * * * * * * * * * * * * * * * * -->
     <section class="contact-section">
         <div class="contact-container">
 
-            <!-- Formulario a la izquierda -->
+            <!-- Parte de la izquierda -->
             <div class="contact-form">
                 <h2>Contáctanos</h2>
                 <form action="https://formspree.io/f/xjkrwlbb" method="POST">
@@ -332,7 +348,7 @@
                 </form>
             </div>
 
-            <!-- Mapa a la derecha -->
+            <!-- Parte de la derecha -->
             <div class="contact-map">
                 <iframe
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7979.582672497742!2d-78.49068902422208!3d-0.21072459978719513!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a1075e0872b%3A0x44b1552c38388024!2sESFOT%20EPN%2C%20Toledo%2C%20Quito%20170143!5e0!3m2!1ses!2sec!4v1749771772571!5m2!1ses!2sec"
@@ -342,14 +358,14 @@
 
         </div>
     </section>
-    <!-- End - Section Contact -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del Contact * * * * * * * * * * * * * * * * * * * * * * * -->
 
-    <!-- Start - Section Gallery -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion Gallery * * * * * * * * * * * * * * * * * * * * * * * -->
     <div class="separator-block"></div>
     
     <div class="gallery__container">
         <div class="titulo__gallery">
-            <h2>Galeria</h2>
+            <h2>Galería</h2>
         </div>
         
         <div class="gallery">
@@ -363,11 +379,9 @@
         </div>
     </div>
 
-    <!-- End - Section Gallery -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del Gallery * * * * * * * * * * * * * * * * * * * * * * * -->
 
-
-
-    <!-- Start - Section Footer -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Seccion Footer * * * * * * * * * * * * * * * * * * * * * * * -->
     <footer class="footer">
         <div class="footer-container">
             <div class="footer-left">
@@ -380,7 +394,7 @@
                 <p>EPN - ESFOT</p>
             </div>
            <div class="footer-right">
-                <h3>Slogan</h3> <p>Sabiduría que no duerme</p>
+                <h3>Slogan</h3> <p>Preguntar es el primer paso para aprender</p>
                 <h3>Copyright</h3>
                 <div class="copyright-row">
                     <img src="src/images/copyright_symbol.png" alt="Copyright icon" class="footer-icons" />
@@ -389,8 +403,7 @@
         </div>
         </div>
     </footer>
-
-    <!-- End - Section Contact -->
+    <!-- * * * * * * * * * * * * * * * * * * * * * * * Fin del Footer * * * * * * * * * * * * * * * * * * * * * * * -->
 
 </body>
 
